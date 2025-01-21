@@ -3,216 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Affiliate Future</title>
+    <title>Toko Online Hilman</title>
     <style>
+        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
         }
+
         body {
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            overflow-x: hidden;
+            color: #333;
+            background-color: #f8f9fa;
         }
-        .jumbotron {
+
+        header {
+            background-color: #002b5c;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header .logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f5b301;
+        }
+
+        .hero {
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(to bottom, #004aad, #0073e6);
-            color: white;
+            background: linear-gradient(90deg, #00509e, #002b5c);
+            color: #fff;
         }
-        .jumbotron h1 {
-            font-size: 3rem;
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-        .welcome {
-            font-size: 2rem;
-            color: white;
-            font-style: italic;
-            animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            display: inline-block;
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink {
-            from { border-right: 2px solid white; }
-            to { border-right: transparent; }
-        }
+
         .content {
             padding: 20px;
-            color: white;
-            text-align: justify;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .red-orange {
-            background: linear-gradient(to bottom, #ff5e5e, #ff7a3d);
+
+        .content article {
+            margin-bottom: 30px;
         }
-        .blue {
-            background: linear-gradient(to bottom, #00509e, #0073e6);
+
+        .content h2 {
+            color: #002b5c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
         }
-        .purple {
-            background: linear-gradient(to bottom, #6a1b9a, #8e44ad);
+
+        .content p {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #555;
         }
-        .green {
-            background: linear-gradient(to bottom, #2ecc71, #27ae60);
-        }
-        .wave-divider {
-            position: relative;
-            height: 50px;
-            overflow: hidden;
-        }
-        .wave-divider svg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .floating-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: linear-gradient(45deg, #ff5e5e, #ff7a3d);
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        .floating-button:hover {
-            background: linear-gradient(45deg, #ff7a3d, #ff5e5e);
-        }
-        .icon-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 20px;
-        }
-        .icon-container {
+
+        footer {
+            background-color: #002b5c;
+            color: #fff;
             text-align: center;
-            cursor: pointer;
-        }
-        .icon-container .icon {
-            font-size: 3rem;
-            background: white;
-            color: #2ecc71;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 auto 10px;
-        }
-        .icon-container:hover .icon {
-            background: #2ecc71;
-            color: white;
-        }
-        .icon-container a {
-            text-decoration: none;
-            color: white;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-
-    <div class="jumbotron">
-        <span class="welcome">Welcome</span>
-        <h1>Smart Affiliate Future</h1>
-    </div>
-
-    <!-- Penjelasan SAF -->
-    <div class="content red-orange">
-        <h2>Apa itu SAF?</h2>
-        <p>Smart Affiliate Future (SAF) adalah platform inovatif yang dirancang untuk membantu individu mendapatkan penghasilan melalui program afiliasi yang cerdas.</p>
-        <p>SAF menawarkan peluang tanpa batas dengan sistem yang transparan, fleksibel, dan didukung oleh teknologi terbaru.</p>
-        <p>Bergabunglah dengan SAF untuk membangun masa depan finansial Anda melalui jaringan afiliasi yang solid dan terpercaya.</p>
-    </div>
-
-    <!-- Garis Pemisah Ombak -->
-    <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0073e6" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,176C640,160,800,160,960,165.3C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Kontak -->
-    <div class="content blue">
-        <h2>Kontak Kami</h2>
-        <p>Untuk informasi lebih lanjut, jangan ragu untuk menghubungi tim kami yang ramah dan profesional.</p>
-        <p>Kami siap membantu Anda mencapai tujuan finansial melalui program afiliasi kami.</p>
-    </div>
-
-    <!-- Garis Pemisah Ombak -->
-    <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8e44ad" fill-opacity="1" d="M0,224L80,197.3C160,171,320,117,480,112C640,107,800,149,960,181.3C1120,213,1280,235,1360,245.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Keuntungan -->
-    <div class="content purple">
-        <h2>Keuntungan Bergabung di SAF</h2>
-        <ul>
-            <li>Sistem yang transparan dan terpercaya</li>
-            <li>Potensi penghasilan tanpa batas</li>
-            <li>Program pelatihan gratis</li>
-            <li>Komunitas yang suportif</li>
-            <li>Penggunaan teknologi terbaru</li>
-            <li>Kemitraan dengan perusahaan ternama</li>
-            <li>Pembayaran tepat waktu</li>
-            <li>Dukungan pelanggan 24/7</li>
-            <li>Fleksibilitas kerja</li>
-            <li>Alat pemasaran modern</li>
-            <li>Reputasi yang baik</li>
-            <li>Program reward menarik</li>
-            <li>Sistem referral yang mudah</li>
-            <li>Pelatihan dan pengembangan</li>
-            <li>Akses ke event eksklusif</li>
-        </ul>
-    </div>
-
-    <!-- Floating Button -->
-    <button class="floating-button">Gabung Sekarang</button>
-
-    <!-- Garis Pemisah Hijau -->
-    <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2ecc71" fill-opacity="1" d="M0,256L80,224C160,192,320,128,480,96C640,64,800,64,960,80C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Profil, Legalitas, Market Plan -->
-    <div class="content green">
-        <div class="icon-section">
-            <div class="icon-container">
-                <a href="https://contoh.com" target="_blank">
-                    <div class="icon">👤</div>
-                    <p>Profil</p>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="https://contoh.com" target="_blank">
-                    <div class="icon">⚖️</div>
-                    <p>Legalitas</p>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="https://contoh.com" target="_blank">
-                    <div class="icon">📊</div>
-                    <p>Market Plan</p>
-                </a>
-            </div>
+    <header>
+        <div class="logo">
+            <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241209_021657.png?w=768" alt="Logo Toko Online Hilman">
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="https://contoh.com/profil">Profil</a></li>
+                <li><a href="https://contoh.com/legalitas">Legalitas</a></li>
+                <li><a href="https://contoh.com/komisi">Komisi</a></li>
+                <li><a href="https://contoh.com/kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Selamat Datang di Toko Online Hilman</h1>
+            <p>Platform terbaik untuk produk berkualitas dan layanan profesional. Kami hadir untuk memenuhi kebutuhan Anda dengan layanan terpercaya.</p>
+        </section>
+
+        <section class="content">
+            <article>
+                <h2>Kenapa Memilih Kami?</h2>
+                <p>Kami menyediakan produk berkualitas dengan harga terbaik dan dukungan pelanggan yang siap membantu Anda kapan saja.</p>
+            </article>
+            <article>
+                <h2>Legalitas yang Terjamin</h2>
+                <p>Toko Online Hilman telah terdaftar resmi dan memiliki lisensi yang diakui secara internasional. Keamanan dan kepercayaan adalah prioritas utama kami.</p>
+            </article>
+            <article>
+                <h2>Sistem Komisi yang Menguntungkan</h2>
+                <p>Bergabunglah dengan sistem afiliasi kami dan dapatkan komisi terbaik untuk setiap penjualan yang Anda hasilkan. Kami mendukung kesuksesan Anda.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Online Hilman. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Placeholder for any future interactive features
+        console.log("Welcome to Toko Online Hilman!");
+    </script>
 </body>
 </html>
